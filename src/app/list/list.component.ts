@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+//imported
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+  styleUrls: ['./list.component.scss'],
 })
 export class ListComponent implements OnInit {
-
-  constructor() { }
+  constructor(private _http: HttpService) {}
 
   ngOnInit(): void {
+    this._http.myMethod();
   }
-
 }

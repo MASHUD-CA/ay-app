@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   clickCounter: number = 0; // TypeScript
-  name: string = '';
+  name: string = 'hello is it ';
 
   constructor() {}
 
